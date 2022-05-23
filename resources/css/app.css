@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://db.onlinewebfonts.com/c/1064f0ad1cb65fdab43bb592ddd8aa91?family=Gilroy-Bold');
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Medium'), url('../fonts/Gilroy-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Medium'), url('../fonts/Gilroy-Regular.woff') format('woff');
+}
+    
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.textGrey {
+    color: #788787;
+}
+
+.textBlue {
+    color: #0080FF;
+}
+
+.bgOrange50 {
+    background-color: #F9F7F5;
+}
+
+.bgRed50 {
+    background: #F6EEF4;
+}
+
+.bgBlue400 {
+    background-color: #0045F6;
+}
+
+.bgBlue50 {
+    background-color: #EBF2FA;
+}
+
+.btnBorderRadius {
+    border-radius: 14px;
+}
+
+.shadowBlue {
+    box-shadow: 0px -1px 4px rgba(0, 207, 255, 0.15), 0px 8px 8px rgba(0, 207, 255, 0.15);
+}
