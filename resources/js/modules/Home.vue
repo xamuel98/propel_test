@@ -84,7 +84,7 @@ export default {
                     title: "Title 3"
                 },
             ],
-            isModalOpen: true,
+            isModalOpen: false,
             selectedImage: null,
         }
     },

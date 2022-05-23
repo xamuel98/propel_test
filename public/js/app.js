@@ -17442,7 +17442,7 @@ __webpack_require__.r(__webpack_exports__);
         id: 3,
         title: "Title 3"
       }],
-      isModalOpen: true,
+      isModalOpen: false,
       selectedImage: null
     };
   },
