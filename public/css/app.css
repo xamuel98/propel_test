@@ -652,6 +652,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-y-4{
     row-gap: 1rem;
 }
+.gap-y-3{
+    row-gap: 0.75rem;
+}
+.gap-x-3{
+    -moz-column-gap: 0.75rem;
+         column-gap: 0.75rem;
+}
 .space-y-10 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -802,6 +809,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pl-7{
     padding-left: 1.75rem;
+}
+.pb-0{
+    padding-bottom: 0px;
 }
 .text-center{
     text-align: center;
@@ -962,6 +972,28 @@ Ensure the default browser behavior of the `hidden` attribute.
     box-shadow: 0px -1px 4px rgba(0, 207, 255, 0.15), 0px 8px 8px rgba(0, 207, 255, 0.15);
 }
 
+.extra-links .extra-links__li > .extra-links__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    letter-spacing: 0.01em;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: #788787;
+}
+
+.extra-links .extra-links__li > .extra-links__link:hover {
+    color: #000;
+    transition: .3s all;
+}
+
+@media only screen and (max-width: 768px) {
+    .extra-links .extra-links__li > .extra-links__link {
+        font-size: 13px;
+    }    
+}
+
 .hover\:bg-black:hover{
     --tw-bg-opacity: 1;
     background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1054,6 +1086,9 @@ Ensure the default browser behavior of the `hidden` attribute.
     .lg\:block{
         display: block;
     }
+    .lg\:hidden{
+        display: none;
+    }
     .lg\:w-4\/5{
         width: 80%;
     }
@@ -1068,6 +1103,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     }
     .lg\:justify-between{
         justify-content: space-between;
+    }
+    .lg\:gap-x-8{
+        -moz-column-gap: 2rem;
+             column-gap: 2rem;
     }
     .lg\:p-10{
         padding: 2.5rem;

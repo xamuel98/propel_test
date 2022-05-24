@@ -5,8 +5,8 @@
     />
     <TheNavbar />
     <BaseSidebar />
-    <main class="main-wrapper justify-self-auto w-full lg:w-4/6 ml-auto py-7 lg:py-5 overflow-x-hidden">
-        <div class="main-wrapper__inner max-w-xl mx-auto p-6 lg:p-10 relative bg-transparent">
+    <main class="main-wrapper relative justify-self-auto w-full lg:w-4/6 ml-auto py-7 lg:py-5 overflow-x-hidden">
+        <div class="main-wrapper__inner flex flex-col justify-between max-w-xl mx-auto px-6 pt-6 pb-0 lg:p-10 relative bg-transparent">
             <div class="">
                 <StepNavigation :steps="steps" :currentstep="currentstep" @update-again="navigateSteps" />
                 <div class="flex flex-col justify-start space-y-2">
@@ -50,6 +50,20 @@
                     </button>
                 </div>
             </div>
+            <ul class="list-none mx-auto flex lg:hidden flex-wrap justify-start items-center gap-y-3 gap-x-3 lg:gap-x-8 extra-links">
+                <li class="extra-links__li">
+                    <a href="javascript:void(0)" class="extra-links__link">©Propel, {{new Date().getFullYear()}}</a>
+                </li>
+                <li class="extra-links__li">
+                    <a href="javascript:void(0)" class="extra-links__link">Privacy policy</a>
+                </li>
+                <li class="extra-links__li">
+                    <a href="javascript:void(0)" class="extra-links__link">Contact us</a>
+                </li>
+                <li class="extra-links__li">
+                    <a href="javascript:void(0)" class="extra-links__link">Terms of use</a>
+                </li>
+            </ul>
         </div>
     </main>
 </template>
